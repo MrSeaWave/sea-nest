@@ -25,7 +25,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrSeaWave/sea-nest.git"
+    "url": "https://github.com/MrSeaWave/sea-nest.git",
+    "branch": "main"
   },
   "license": "MIT",
   "devDependencies": {
