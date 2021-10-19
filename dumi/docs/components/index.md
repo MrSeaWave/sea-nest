@@ -9,4 +9,4 @@ nav:
 
 `sea-nest` 下的组件库
 
-- [@sea-org/s-statistic](/components/basic/statistic): 指标卡
+- [@sea-org/s-statistic](/components/basic/statistic)<!-- @IGNORE PREVIOUS: link -->: 指标卡
