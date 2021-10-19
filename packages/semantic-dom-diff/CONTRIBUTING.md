@@ -12,7 +12,7 @@ $ yarn
 Run Test
 
 ```shell
-$ npm run test
+$ yarn run test
 ```
 
 ## Pull Request Etiquette
