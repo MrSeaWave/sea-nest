@@ -1,10 +1,10 @@
 {
   "name": "@sea-org/semantic-dom-diff",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "比较dom信息",
   "keywords": [],
   "author": "Sea <MrDaemon@outlook.com>",
-   "license": "MIT",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",

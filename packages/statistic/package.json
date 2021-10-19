@@ -1,13 +1,13 @@
 {
   "name": "@sea-org/s-statistic",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "指标卡",
   "keywords": [
     "sea-nest",
     "statistic"
   ],
   "author": "Sea <MrDaemon@outlook.com>",
-   "license": "MIT",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
@@ -34,18 +34,18 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.8",
-    "@sea-org/s-utils": "^0.0.0",
+    "@sea-org/s-utils": "^0.1.0",
     "lit": "^2.0.0-rc.2"
   },
   "devDependencies": {
     "@lit-labs/react": "^1.0.0-rc.2",
     "@open-wc/testing-helpers": "^1.8.4",
+    "@sea-org/semantic-dom-diff": "^0.1.0",
     "@web/dev-server": "^0.1.20",
     "@web/dev-server-esbuild": "^0.2.12",
     "@web/dev-server-import-maps": "^0.0.6",
     "@web/dev-server-legacy": "^0.1.7",
     "@webcomponents/webcomponentsjs": "^2.6.0",
-    "@sea-org/semantic-dom-diff": "^0.0.0",
     "react": "npm:@pika/react",
     "react-dom": "npm:@pika/react-dom"
   }

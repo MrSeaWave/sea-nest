@@ -1,10 +1,10 @@
 {
   "name": "@sea-org/s-utils",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "sea-nest项目的实用类函数",
   "keywords": [],
   "author": "Sea <MrDaemon@outlook.com>",
-   "license": "MIT",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",

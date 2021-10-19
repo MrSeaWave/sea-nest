@@ -1,6 +1,6 @@
 {
   "name": "@sea-org/s-hello-world",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": "true",
   "description": "指标卡",
   "keywords": [
@@ -8,7 +8,7 @@
     "hello-world"
   ],
   "author": "Sea <MrDaemon@outlook.com>",
-   "license": "MIT",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
