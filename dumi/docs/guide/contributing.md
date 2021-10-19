@@ -8,11 +8,11 @@ nav:
 
 ## 贡献 Component 代码
 
-参考 sea-nest 的 [CONTRIBUTING](https://github.com/MrSeaWave/sea-nest/blob/master/CONTRIBUTING.md) 文档。
+参考 sea-nest 的 [CONTRIBUTING](https://github.com/MrSeaWave/sea-nest/blob/main/CONTRIBUTING.md) 文档。
 
 ## 贡献 Utils 代码
 
-参考 utils 的 [CONTRIBUTING](https://github.com/MrSeaWave/sea-nest/blob/master/packages/utils/CONTRIBUTING.md) 文档。
+参考 utils 的 [CONTRIBUTING](https://github.com/MrSeaWave/sea-nest/blob/main/packages/utils/CONTRIBUTING.md) 文档。
 
 ## 贡献文档
 

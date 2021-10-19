@@ -1,6 +1,17 @@
-# sea-nest
+# Sea Nest
 
-## Setting up the sea-nest monorepo for development
+Sea Nest，是一款基于 React + Lit Element + TypeScript 开发的个人组件库 🎉。如果你也想学习组件开发，欢迎加入或提供意见，你的 star ⭐，是对我最大的鼓励。
+
+## ✨ 特性
+
+- 🌈 提炼组件库设计良好的视觉风格
+- 📦 渐进式探索高质量的前端代码的实现
+- 🛡 使用 TypeScript 开发，提升开发体验
+- ✅ 使用单元测试，为组件稳定性保驾护航
+- 📖 提供开发过程的文档思路，助力你学习组件开发
+- 🔖 欢迎贡献组件代码，探索最佳实践
+
+## 📦 Setting up the sea-nest monorepo for development
 
 Initialize repo:
 
@@ -29,7 +40,11 @@ $ npm run build
 $ npm run docs:start
 ```
 
-## 如何安装依赖
+## 🚧 计划
+
+参考[TODOLIST](./TODOLIST.md)
+
+## 🔨 如何安装依赖
 
 主项目添加依赖
 
@@ -57,7 +72,7 @@ $ yarn workspace [packageNameA] add [packageNameB@version] # packageNameA是指�
 $ yarn workspace [packageNameA] remove [packageNameB]
 ```
 
-## 如何创建子应用
+## 📦 如何创建子应用
 
 ```bash
 $ npm run create
@@ -78,23 +93,23 @@ $ npm run create
 }
 ```
 
-## 构建
+## 🔨 构建
 
 ```bash
 $ npm run build
 ```
 
-## 发布
+## 🚀 发布
 
 ```shell
 $ npm run release
 ```
 
-## Contributing
+## 👥 Contributing
 
 如何贡献代码查看 [CONTRIBUTING](./CONTRIBUTING.md)
 
-## dependencies
+## 📦 dependencies
 
 - [lerna](http://www.febeacon.com/lerna-docs-zh-cn/routes/commands/)：多包管理
 - [father-build](https://github.com/umijs/father)：用于构建 packages
