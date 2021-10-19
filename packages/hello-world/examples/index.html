@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>s-hello-world examples</title>
+    <script src="../dist/index.js" defer></script>
+    <style></style>
+  </head>
+  <body>
+    <h1>Demo</h1>
+
+    <iframe width="0" height="0"></iframe>
+    <s-hello-world id="2" name="my name" onchange="clickTem(this)"></s-hello-world>
+    <script>
+      function clickTem(t) {
+        console.log('html click', t,t.name,t.id);
+      }
+      // clickHandler 事件只能由此方式触发，不能写在html中
+      const el = document.querySelector('s-hello-world');
+      el.addEventListener('clickHandler', (e) => {
+        console.log('clickHandler--->', e);
+      });
+    </script>
+  </body>
+</html>

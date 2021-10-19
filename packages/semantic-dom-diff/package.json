@@ -1,0 +1,32 @@
+{
+  "name": "@sea-org/semantic-dom-diff",
+  "version": "0.0.0",
+  "description": "比较dom信息",
+  "keywords": [],
+  "author": "Sea <MrDaemon@outlook.com>",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "maintainers": [
+    "seawave"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrSeaWave/sea-nest.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "cd ../.. && PACKAGE=semantic-dom-diff father-build",
+    "build:watch": "cd ../.. && PACKAGE=semantic-dom-diff father-build --wacth"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.8"
+  }
+}

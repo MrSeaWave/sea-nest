@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>&lt;s-statistic> Demo</title>
+<!--    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>-->
+    <script type="module" src="./index.js"></script>
+<!--        <script type="module" src="../../dist/index.esm.js"></script>-->
+    <script type="module" src="../../src/index.ts"></script>
+    <!--    <script type="module" src="../lib/index.js"></script>-->
+    <style>
+      body {
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+          'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+          'Noto Color Emoji';
+        font-variant: tabular-nums;
+        line-height: 1.5715;
+        background-color: #fff;
+        font-feature-settings: 'tnum', 'tnum';
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>Demo</h1></div>
+    <h2 id="type">当前数据类型：basic</h2>
+    <s-statistic></s-statistic>
+    <div id="btn-group">
+    <button type="button" value="empty">empty Data</button>
+    <button type="button" value="basic">basic Data</button>
+    <button type="button" value="average">average Data</button>
+    </div>
+  </body>
+</html>

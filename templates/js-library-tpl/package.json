@@ -1,0 +1,31 @@
+{
+  "name": "@sea-org/{{projectName}}",
+  "version": "0.0.0",
+  "description": "{{projectDescription}}",
+  "keywords": [],
+  "author": "{{author}} <{{email}}>",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "maintainers": [
+    "{{npmUser}}"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrSeaWave/sea-nest.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "cd ../.. && PACKAGE={{projectName}} father-build",
+    "build:watch": "cd ../.. && PACKAGE={{projectName}} father-build --watch"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.8"
+  }
+}

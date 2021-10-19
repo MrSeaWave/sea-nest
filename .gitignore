@@ -1,0 +1,13 @@
+node_modules
+.idea
+lib
+es
+dist
+.eslintcache
+vscode
+lerna-debug.log
+package-lock.json
+yarn-error.log
+.DS_Store
+.umi
+dumi/docs-dist

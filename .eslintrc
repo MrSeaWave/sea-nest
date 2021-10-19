@@ -1,0 +1,34 @@
+{
+  "extends": ["alloy", "alloy/typescript", "plugin:jest/recommended"],
+  "plugins": ["jest"],
+  "rules": {
+    "@typescript-eslint/prefer-interface": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
+    "no-return-assign": 0,
+    "semi": ["error", "always"],
+    "no-confusing-arrow": 0,
+    // see https://github.com/prettier/prettier/issues/3847
+    "space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
+    "no-underscore-dangle": 0,
+    "no-plusplus": 0,
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    /**
+     * 禁止对函数的参数重新赋值
+     */
+    "no-param-reassign": "error",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-console": "off",
+    // 禁止使用 var
+    "no-var": "error",
+    "@typescript-eslint/consistent-type-definitions": 0,
+    "max-params": ["error", 5],
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/member-ordering": ["error", { "default": ["signature", "field", "constructor", "method"] }]
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "createDefaultProgram": true
+  }
+}

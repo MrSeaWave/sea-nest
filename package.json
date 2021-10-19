@@ -1,0 +1,70 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "create": "node ./scripts/create.js",
+    "clean": "lerna clean",
+    "build": "father-build",
+    "build:watch": "father-build --watch",
+    "docs:start": "cross-env APP_ROOT=dumi dumi dev",
+    "docs:build": "cross-env APP_ROOT=dumi dumi build",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx packages/",
+    "lint:fix": "npm run lint:js -- --fix",
+    "release": "npm run build && lerna publish",
+    "test": "lerna run test",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "*.{json,css,md}": [
+      "prettier -w"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "prettier -w",
+      "npm run lint:fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrSeaWave/sea-nest.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@testing-library/dom": "^8.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.1",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "babel-jest": "^27.0.2",
+    "cross-env": "^7.0.3",
+    "dumi": "1.1.27",
+    "dumi-theme-mobile": "^1.1.8",
+    "eslint": "^7.32.0",
+    "eslint-config-alloy": "^4.2.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "father-build": "^1.19.8",
+    "fs-extra": "^10.0.0",
+    "handlebars": "^4.7.7",
+    "husky": "^6.0.0",
+    "inquirer": "^8.1.2",
+    "jest": "^27.0.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.0.0",
+    "metalsmith": "^2.3.0",
+    "minimatch": "^3.0.4",
+    "prettier": "^2.3.1",
+    "testing-library__dom": "^7.29.4-beta.1",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
