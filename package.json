@@ -7,7 +7,7 @@
     "build": "father-build",
     "build:watch": "father-build --watch",
     "docs:start": "cross-env APP_ROOT=dumi dumi dev",
-    "docs:build": "cross-env APP_ROOT=dumi dumi build",
+    "docs:build": "cross-env BUILD_ENV=prod APP_ROOT=dumi dumi build",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx packages/",
     "lint:fix": "npm run lint:js -- --fix",
     "release": "npm run build && lerna publish",
