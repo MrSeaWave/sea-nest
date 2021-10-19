@@ -6,11 +6,12 @@ const pkgDocs = getHostPkgDocs();
 // @ts-ignore
 const BUILD_ENV = process.env.BUILD_ENV || 'dev';
 const publicPath = BUILD_ENV === 'dev' ? '/' : '/sea-nest/';
-console.log('PROCESS', BUILD_ENV,publicPath);
+
 // more config: https://d.umijs.org/config
 export default defineConfig({
   title: 'sea-nest',
   mode: 'site',
+  base:publicPath,
   publicPath: publicPath,
   favicon:
     'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
