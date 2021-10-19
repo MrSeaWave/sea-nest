@@ -35,7 +35,7 @@ $ npm install @sea-org/sea-nest
 $ yarn add @sea-org/sea-nest
 ```
 
-成功安装完成之后，即可使用 import 或 require 进行引用。更多 component 请点击[查看](/components)
+成功安装完成之后，即可使用 import 或 require 进行引用。更多 component 请点击[查看](/components)<!-- @IGNORE PREVIOUS: link -->
 
 ### Utils
 
@@ -51,7 +51,7 @@ $ npm install @sea-org/s-utils
 $ yarn add @sea-org/s-utils
 ```
 
-详情请点击查看 [utils](/utils)
+详情请点击查看 [utils](/utils)<!-- @IGNORE PREVIOUS: link -->
 
 ## 反馈与共建
 

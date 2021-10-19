@@ -41,4 +41,4 @@ export default App;
 
 ![image](https://user-images.githubusercontent.com/21967852/137872775-4b2965a5-d253-49c0-9a0d-ef69032e0d04.png)
 
-以上是组件库(`@sea-org/sea-nest`)的简单实用，更多组件请参考[component](/components)
+以上是组件库(`@sea-org/sea-nest`)的简单实用，更多组件请参考[component](/components)<!-- @IGNORE PREVIOUS: link -->
