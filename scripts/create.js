@@ -8,9 +8,11 @@ const path = require('path');
 const { execSync } = require('child_process');
 const Metalsmith = require('metalsmith');
 const Handlebars = require('handlebars');
-const { Minimatch } = require('minimatch');
+const metalsmithRename = require('@swjs/metalsmith-rename');
 
-const npmUser = execSync('npm whoami --registry=https://registry.npmjs.org/').toString('utf8').trim();
+const npmUser = execSync('npm whoami --registry=https://registry.npmjs.org/')
+  .toString('utf8')
+  .trim();
 const user = execSync('git config user.name').toString('utf8').trim();
 const email = execSync('git config user.email').toString('utf8').trim();
 
@@ -154,59 +156,4 @@ function generate(config) {
         err ? reject(err) : resolve();
       });
   });
-}
-
-// const options = [
-//   {
-//     pattern: 'docs/**/*.md',
-//     rename: function (name) {
-//       return 'renamed' + name;
-//     },
-//   },// ====> docs/**/renamed+*.md
-//   {
-//     pattern: 'public/about.html',
-//     rename: 'index.html',
-//   }, // ====> public/index.html
-// ];
-/**
- * @desc 只转换目录下的文件名。
- * @param {array} options options,pattern: 使用 minimatch 去匹配filename
- * @return {(function(*=, *, *): void)|*}
- */
-function metalsmithRename(options = []) {
-  return (files, _, done) => {
-    // 转换名字
-    options.forEach((opt) => {
-      const { pattern, rename } = opt;
-      const matcher = Minimatch(pattern);
-
-      Object.keys(files).forEach((filename) => {
-        if (!matcher.match(filename)) {
-          return;
-        }
-
-        // 返回目录名
-        let newFilename = path.dirname(filename);
-
-        // 防止是根目录
-        if (newFilename === '.') {
-          newFilename = '';
-        }
-
-        if (typeof rename === 'function') {
-          // 先返回目录最后一部分，在和新目录组合在一起
-          newFilename = path.join(newFilename, rename(path.basename(filename)));
-        } else {
-          newFilename = path.join(newFilename, rename);
-        }
-
-        if (newFilename !== filename) {
-          files[newFilename] = files[filename];
-          delete files[filename];
-        }
-      });
-    });
-
-    done();
-  };
 }

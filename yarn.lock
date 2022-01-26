@@ -1186,6 +1186,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.7.tgz#03ff99f64106588c9c403c6ecb8c3bafbbdff1fa"
+  integrity sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.10.4", "@babel/template@^7.15.4", "@babel/template@^7.3.3", "@babel/template@^7.4.0":
   version "7.15.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.15.4.tgz#51898d35dcf3faa670c4ee6afcfd517ee139f194"
@@ -2763,6 +2770,14 @@
     "@svgr/plugin-jsx" "^5.5.0"
     "@svgr/plugin-svgo" "^5.5.0"
     rollup-pluginutils "^2.8.2"
+
+"@swjs/metalsmith-rename@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@swjs/metalsmith-rename/-/metalsmith-rename-0.0.1.tgz#41c0b3ac46f6d06e7963eca55cd2270c76ba556e"
+  integrity sha512-RnyvT/1gTV2Zgnr2cYcFR0hPju7deA495JEpOrrsUFp9vkG4nyLxfjP2n+9PC2UQWXMGxHsxRveWISdvnWGlbA==
+  dependencies:
+    "@babel/runtime" "^7.16.7"
+    minimatch "^3.0.4"
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
